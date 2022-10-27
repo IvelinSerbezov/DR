@@ -1,0 +1,20 @@
+package zadachi;
+import java.util.Scanner;
+public class zad3dr {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner inp = new Scanner(System.in);
+int s=inp.nextInt();
+int e=inp.nextInt();
+int br=0;
+for(int i=s;i<=e;i++) {
+	int fn=i%10;
+	int ln=i;
+	while(ln/10>0) {
+		ln=ln/10;
+	}
+	if(fn==ln)br++;
+}
+System.out.println("Broq na tezi chisla e: "+br);
+	}
+}
